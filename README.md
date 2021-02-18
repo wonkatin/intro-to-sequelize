@@ -4,8 +4,6 @@ Sequelize is a library that allows us to interact with our sql database by writi
 We are going to use sequelize to make two tables: one about books, and one about whatever you please!
 
 ### Getting started
-NEED TO INSTALL NVM
-
 We will need to install a tool called `sequelize-cli`. This tool will be used by other projects, so we want to install it globally, not just in this project. The `-g` flag in this command tells npm to install on the global level:
 ```
 npm install -g sequelize-cli

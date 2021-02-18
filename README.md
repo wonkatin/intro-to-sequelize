@@ -90,7 +90,7 @@ Remember to connect to the "intro_to_sequelize" database first.
 
 ## Make your own table
 Repeat this entire project in a new folder, with the goal of creating a new table. It should store data on whatever you'd like.
-1. Choose what table you want to make, Decide on 3 columns for it (not including id, createdAt, and updatedAt), and choose their data types. Make an ERD for this table. 
+1. Choose what table you want to make. Decide on 3 columns for it (not including id, createdAt, and updatedAt), and choose their data types. Make an ERD for this table. 
 1. Make a new folder outside this lab and `cd` into it. You don't have to turn this folder in, it's just for you to practice. But run `git init` just to stay in shape!
 1. `npm init` in that folder, and note what gets created.
 1. `npm install sequelize`, and `npm install pg`. Check your package.json to confirm the new dependencies, and note the node_modules folder.

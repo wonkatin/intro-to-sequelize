@@ -89,10 +89,19 @@ There is a lot going on here that we will unpack:
 Remember to connect to the "intro_to_sequelize" database first.
 
 ## Make your own table
-Make a table to store data on whatever you'd like.
+Repeat this entire project in a new folder, with the goal of creating a new table. It should store data on whatever you'd like.
+1. Choose what table you want to make, Decide on 3 columns for it (not including id, createdAt, and updatedAt), and choose their data types. Make an ERD for this table. 
+1. Make a new folder outside this lab and `cd` into it. You don't have to turn this folder in, it's just for you to practice. But run `git init` just to stay in shape!
+1. `npm init` in that folder, and note what gets created.
+1. `npm install sequelize`, and `npm install pg`. Check your package.json to confirm the new dependencies, and note the node_modules folder.
+1. Now is a good time to make a `.gitignore` and write `node_modules` in it. Make sure that your node_modules don't appear in your git status.
+1. `sequelize init` in that folder, and note what gets created.
+1. Modify your `config/config.json`. See the *Setting up Sequelize* section above.
+1. Using psql or the `createdb` terminal command, create a database with the same name that you put in your config.json.
 1. Make a migration & model file using `sequelize model:generate <name, attributes, etc>`
 1. Look at the generated files and make sure everything looks good. Pay attention to the columns in the migration, because once this gets run it's a pain to undo!
 1. Run the migration with `sequelize db:migrate`
 1. Look in psql to confirm that your table got made.
-1. Put a new `create` command in your dbTest.js. (You should probably comment out the old one, or you'll get a new copy of that same book every time you run dbTest.js)
+1. Make a dbTest.js, and put a new `create` command in it.
+1. `node` your dbTest.js. 
 1. Look at your new row in psql! Nice!

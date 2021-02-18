@@ -95,13 +95,13 @@ Repeat this entire project in a new folder, with the goal of creating a new tabl
 1. `npm init` in that folder, and note what gets created.
 1. `npm install sequelize`, and `npm install pg`. Check your package.json to confirm the new dependencies, and note the node_modules folder.
 1. Now is a good time to make a `.gitignore` and write `node_modules` in it. Make sure that your node_modules don't appear in your git status.
-1. `sequelize init` in that folder, and note what gets created.
+1. `sequelize init`, and note what gets created.
 1. Modify your `config/config.json`. See the *Setting up Sequelize* section above.
 1. Using psql or the `createdb` terminal command, create a database with the same name that you put in your config.json.
 1. Make a migration & model file using `sequelize model:generate <name, attributes, etc>`
 1. Look at the generated files and make sure everything looks good. Pay attention to the columns in the migration, because once this gets run it's a pain to undo!
 1. Run the migration with `sequelize db:migrate`
 1. Look in psql to confirm that your table got made.
-1. Make a dbTest.js, and put a new `create` command in it.
+1. Make a dbTest.js, and put a `create` command in it.
 1. `node` your dbTest.js. 
 1. Look at your new row in psql! Nice!

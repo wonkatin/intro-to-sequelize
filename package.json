@@ -1,0 +1,24 @@
+{
+  "name": "intro-to-sequelize",
+  "version": "1.0.0",
+  "description": "Sequelize is a library that allows us to interact with our sql database by writing javascript code. In other words, it is going to translate our js commands into sql commands, send them to our sql server, and translate the results into js for us.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonkatin/intro-to-sequelize.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wonkatin/intro-to-sequelize/issues"
+  },
+  "homepage": "https://github.com/wonkatin/intro-to-sequelize#readme",
+  "dependencies": {
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0"
+  }
+}
